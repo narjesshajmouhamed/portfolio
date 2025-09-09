@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/narjess.jpg"; // Remplace par ton avatar si tu as
 import Tilt from "react-parallax-tilt";
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
+import {AiOutlineMail} from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
@@ -60,16 +61,16 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/narjesshadjmed/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li>
+             <li className="social-icons">
+  <a
+    href="mailto:narjess.hajmouhamed@supcom.tn"
+    className="icon-colour home-social-icons"
+  >
+    <AiOutlineMail />
+  </a>
+</li>
+
+
             </ul>
           </Col>
         </Row>

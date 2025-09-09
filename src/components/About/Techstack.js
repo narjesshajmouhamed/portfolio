@@ -5,32 +5,34 @@ import { DiJavascript1, DiReact, DiNodejs, DiPython, DiGit, DiHtml5, DiCss3 } fr
 import { SiFlutter, SiFirebase, SiTensorflow, SiNextdotjs, SiMongodb, SiMysql, SiPostgresql, SiGithub } from "react-icons/si";
 
 function Techstack() {
+  const skills = [
+    { icon: <span style={{ fontWeight: "bold", fontSize: "2rem" }}>C</span>, name: "C" },
+    { icon: <CgCPlusPlus size={50} />, name: "C++" },
+    { icon: <DiJavascript1 size={50} />, name: "JavaScript" },
+    { icon: <DiPython size={50} />, name: "Python" },
+    { icon: <DiHtml5 size={50} />, name: "HTML5" },
+    { icon: <DiCss3 size={50} />, name: "CSS3" },
+    { icon: <DiReact size={50} />, name: "React" },
+    { icon: <DiNodejs size={50} />, name: "Node.js" },
+    { icon: <SiFlutter size={50} />, name: "Flutter" },
+    { icon: <SiFirebase size={50} />, name: "Firebase" },
+    { icon: <SiTensorflow size={50} />, name: "TensorFlow / AI" },
+    
+    { icon: <SiMongodb size={50} />, name: "MongoDB" },
+    { icon: <SiMysql size={50} />, name: "MySQL" },
+    { icon: <SiPostgresql size={50} />, name: "PostgreSQL" },
+
+   
+  ];
+
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      {/* Languages */}
-      <Col xs={4} md={2} className="tech-icons">C</Col> {/* Texte simple pour C */}
-      <Col xs={4} md={2} className="tech-icons"><CgCPlusPlus title="C++" /></Col>
-      <Col xs={4} md={2} className="tech-icons"><DiJavascript1 title="JavaScript" /></Col>
-      <Col xs={4} md={2} className="tech-icons"><DiPython title="Python" /></Col>
-      <Col xs={4} md={2} className="tech-icons"><DiHtml5 title="HTML5" /></Col>
-      <Col xs={4} md={2} className="tech-icons"><DiCss3 title="CSS3" /></Col>
-
-      {/* Frameworks / Libraries */}
-      <Col xs={4} md={2} className="tech-icons"><DiReact title="React" /></Col>
-      <Col xs={4} md={2} className="tech-icons"><DiNodejs title="Node.js" /></Col>
-
-      <Col xs={4} md={2} className="tech-icons"><SiFlutter title="Flutter" /></Col>
-
-      {/* Databases */}
-      <Col xs={4} md={2} className="tech-icons"><SiPostgresql title="PostgreSQL" /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiMysql title="MySQL" /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiMongodb title="MongoDB" /></Col>
-
-      {/* Tools & AI */}
-
-      
-      <Col xs={4} md={2} className="tech-icons"><SiFirebase title="Firebase" /></Col>
-      <Col xs={4} md={2} className="tech-icons"><SiTensorflow title="TensorFlow / AI" /></Col>
+      {skills.map((skill, index) => (
+        <Col xs={4} md={2} className="tech-icons text-center mb-4" key={index}>
+          {skill.icon}
+          <p style={{ marginTop: "8px", fontSize: "0.9rem", color: "white" }}>{skill.name}</p>
+        </Col>
+      ))}
     </Row>
   );
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import {AiOutlineMail} from "react-icons/ai";
 
 function Footer() {
   const date = new Date();
@@ -38,16 +39,17 @@ function Footer() {
                 <FaLinkedinIn />
               </a>
             </li>
-            <li className="social-icons">
-              <a
-                href="https://www.instagram.com/narjesshadjmed/"
-                style={{ color: "white" }}
+           <li className="social-icons">
+  <a
+    href="mailto:narjess.hajmouhamed@supcom.tn"
+  style={{ color: "white" }}
                 target="_blank"
                 rel="noopener noreferrer"
-              >
-                <AiFillInstagram />
-              </a>
-            </li>
+  >
+    <AiOutlineMail />
+  </a>
+</li>
+
           </ul>
         </Col>
       </Row>

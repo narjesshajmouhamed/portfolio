@@ -81,6 +81,26 @@ function NavBar() {
                 Projects
               </Nav.Link>
             </Nav.Item>
+            <Nav.Item>
+  <Nav.Link
+    as={Link}
+    to="/education"
+    onClick={() => updateExpanded(false)}
+  >
+    <ImBlog style={{ marginBottom: "2px" }} /> Education
+  </Nav.Link>
+</Nav.Item>
+<Nav.Item>
+  <Nav.Link
+    as={Link}
+    to="/experience"
+    onClick={() => updateExpanded(false)}
+  >
+    <AiFillStar style={{ marginBottom: "2px" }} /> Experience
+  </Nav.Link>
+</Nav.Item>
+
+
 
             <Nav.Item>
               <Nav.Link
