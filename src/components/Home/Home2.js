@@ -1,12 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/narjess.jpg"; // Remplace par ton avatar si tu as
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
@@ -16,40 +12,19 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              LET ME <span className="purple">INTRODUCE</span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
-              <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C++, Javascript and Go. </b>
-              </i>
+              Hi everyone! I am <span className="purple">Narjess Haj Mouhamed</span> from <span className="purple">Tunisia</span>.
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
-              </i>
+              I am a <b className="purple">3rd Year Engineering Student</b> at <b className="purple">Sup'Com</b>, specializing in <b className="purple">ICT</b>.
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+              I am passionate about <i><b className="purple">AI, IoT, Web & Mobile Development</b></i>, and I enjoy learning and applying new technologies in real projects.
+              <br />
+              <br />
+              Whenever possible, I also explore building products using <b className="purple">Node.js</b> and modern JavaScript frameworks like <i><b className="purple">React.js and Next.js</b></i>.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -62,42 +37,32 @@ function Home2() {
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Feel free to <span className="purple">connect</span> with me
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/narjesshajmouhamed"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <AiFillGithub />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href="https://www.linkedin.com/in/narjess-haj-mouhamed-392470292/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <FaLinkedinIn />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://www.instagram.com/narjesshadjmed/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
@@ -112,4 +77,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;
